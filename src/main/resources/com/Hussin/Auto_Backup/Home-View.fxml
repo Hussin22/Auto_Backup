@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="343.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Hussin.Auto_Backup.HomeController">
+   <children>
+      <TextField fx:id="Path" editable="false" layoutX="103.0" layoutY="123.0" prefHeight="54.0" prefWidth="328.0" />
+      <Button fx:id="Choose_Btn" layoutX="443.0" layoutY="128.0" mnemonicParsing="false" onAction="#setPath" prefHeight="48.0" prefWidth="47.0" styleClass="B_Select" stylesheets="@../../../Css/Style.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imgs/selection.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="Start_B" layoutX="210.0" layoutY="207.0" mnemonicParsing="false" onAction="#Start_Bk" prefHeight="54.0" prefWidth="128.0" styleClass="B_Or" stylesheets="@../../../Css/Style.css" text="Start Backup" />
+      <Pane layoutY="-1.0" prefHeight="69.0" prefWidth="602.0" style="-fx-background-color: #3498db;">
+         <children>
+            <Button layoutX="542.0" layoutY="17.0" mnemonicParsing="false" onAction="#Hide_Tray" prefHeight="36.0" prefWidth="27.0" styleClass="B_Select" stylesheets="@../../../Css/Style.css">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Imgs/close-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="135.0" layoutY="11.0" text="Ultimate Auto Backup" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="72.0" layoutX="47.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imgs/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="536.0" layoutY="293.0" mnemonicParsing="false" onAction="#Setting_Set" prefHeight="47.0" prefWidth="57.0" styleClass="B_Select" stylesheets="@../../../Css/Style.css">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imgs/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Stop_Btn" layoutX="210.0" layoutY="207.0" mnemonicParsing="false" onAction="#Stop_backup" prefHeight="54.0" prefWidth="128.0" style="-fx-background-color: red;" styleClass="B_Or" stylesheets="@../../../Css/Style.css" text="Stop Backup" />
+      <Line endX="469.0" layoutX="124.0" layoutY="289.0" startX="-116.0" />
+      <Button layoutX="8.0" layoutY="293.0" mnemonicParsing="false" onAction="#Linkdin" prefHeight="47.0" prefWidth="57.0" styleClass="B_Select" stylesheets="@../../../Css/Style.css">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imgs/linkedin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="75.0" layoutY="293.0" mnemonicParsing="false" onAction="#github" prefHeight="47.0" prefWidth="57.0" styleClass="B_Select" stylesheets="@../../../Css/Style.css">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imgs/github.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="150.0" layoutY="293.0" mnemonicParsing="false" onAction="#cv" prefHeight="47.0" prefWidth="57.0" styleClass="B_Select" stylesheets="@../../../Css/Style.css">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Imgs/resume.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="231.0" layoutY="299.0" prefHeight="36.0" prefWidth="107.0" text="Developed By :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="299.0" prefHeight="36.0" prefWidth="96.0" text="Hussin Tsouli" textFill="#3498db">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
