@@ -51,7 +51,7 @@ public class HomeController implements Initializable {
     @FXML
     void Start_Bk() throws SchedulerException, IOException {
         Alerty al = new Alerty();
-        al.errAlert("Backup is started", "backup is started please Hide application by click close button!");
+//        al.errAlert("Backup is started", "backup is started please Hide application by click close button!");
         if (isWeekly) {
             Day_Week D_week = new Day_Week();
             D_week.weekly(Path.getText(), Hour, Minutes, Day_Week1);
